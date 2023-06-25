@@ -1,3 +1,4 @@
+-- hola
 /* STEP 0: clean everything that could be related to lab4 */
 USE lab4;
 DROP USER 'mysql'@'localhost';
