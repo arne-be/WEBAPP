@@ -1,4 +1,3 @@
--- hola
 /* STEP 0: clean everything that could be related to lab4 */
 USE lab4;
 DROP USER 'mysql'@'localhost';
@@ -88,11 +87,11 @@ VALUES
   ('randomUser3', 'Theo', 'Mann', 'theo@gmail.com', '123456125', '2000-01-01', 'Password@123', 'Common', 'Im here and using WhatsApp.');
 
 /* NOW WE INSERT SOME DEFAULT DATA (tweets, comments...)*/
-INSERT INTO Tweet (userId, `date`, text, postId, countLikes, countHashtag, countComment)
+INSERT INTO Tweet (userId, `date`, text, countLikes, countHashtag, countComment)
 VALUES 
-	(5, '2023-05-03', 'Hello World!',  null, 0, 0, 0),
-    (4, '2023-05-03', 'Hello World!',  null, 0, 0, 0),
-    (2, '2023-05-03', 'Hello World too!',  1, 0, 0, 0);
+	(5, '2023-05-03', 'Hello World!', 0, 0, 0),
+    (4, '2023-05-03', 'Hello World!', 0, 0, 0),
+    (2, '2023-05-03', 'Hello World too!', 0, 0, 0);
     
 
 /* WE CHECK ALL THE DATA */

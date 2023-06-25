@@ -213,7 +213,7 @@ public class User implements java.io.Serializable {
 		this.usertype = usertype;
 	}
 	public void setAbout(String about){
-		int len = about.length()
+		int len = about.length();
 		if(len > 150){
 			error.put("about",true);
 			System.out.println("Biography is too long.");
